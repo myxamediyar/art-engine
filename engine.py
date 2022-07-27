@@ -5,13 +5,13 @@ import random
 from makemeta import *
 
 paths = []
-empty_img = 'empty-path-name'
+#select one from this folder (choose your own)
 select_one = ['b-clothes']
 background_colors = [
     (255, 95, 118, 255), (156, 208, 52, 255), (206, 140, 85, 255), (112, 220, 230, 255),(190, 255, 211, 255), (90, 154, 100, 255),
     (255, 200, 78, 255), (207, 94, 68, 255), (206, 131, 211, 255), (196, 196, 196, 255)
 ]
-
+#name for colors specified above
 background_names = ["pinkish", "lime", "coffee", "sky", "warm-shower", "swamp", "sunflower", "lava", "20min", "gray"]
 
 existing = []
@@ -45,7 +45,7 @@ def check_exist(now_paths):
     now = now_paths
     for i in existing:
         if now == i:
-            print('This bear already exists,\nSearch redo...')
+            print('This image already exists,\nSearch redo...')
             return True
     existing.append(now)
     return False
