@@ -1,1 +1,1 @@
-my nft minting art engine
+my generative art engine, which uses provided layers
